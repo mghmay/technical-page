@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--color-background: #02589a;
+	--color-text: #FFF;
+	--color-border: #003a66;
+}
+html,body{
+	font-family: "Be Vietnam Pro", Arial, sans-serif;
+	color: var(--color-text);
+	background-color: var(--color-background);
+}
+h1{
+	font-size: 2em;
+}
+
+h2 {
+  width: 100%;
+  background-color: var(--color-border);
+  padding-left: 10px;
+}
+.main-section ul {
+  padding-left: 10px
+}
+p {
+  padding-left: 10px
+}
+#alt-title{
+	font-size: 2em;	
+}
+
+.padding-top {
+  padding-top: 20px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#bodyWrapper{
+	display: flex;
+	padding: 0;
+ 	height: 100%;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	padding: 5px;
+	font-size: 0.8em;
+}
+#navWrapper{
+	position: fixed;
+	top: 0px;
+	padding:0;
+	border-right: 1px solid var(--color-border);
+	width: 250px;
+	height: 100%;
+  z-index: 1000;
+}
+#navbar ul li{
+	width:100%;
+}
+#navbar a:hover{
+	background-color: var(--color-border);
+}
+.nav-link{
+	display: inline-block;
+	transition: 0.3s;
+	width: 100%;
+	padding: 10px 0 10px 5px;
+}
+#main-head{
+	width: 240px;
+}
+
+#main-doc{
+	position: absolute;
+	width: 100%;
+	padding-left: 250px;
+	}
+#syntax li{
+	margin: 0 0 0 20px;
+}
+.media{
+  display: none;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	}
+@media(max-width: 600px){
+	.media {
+    	display: inline-block;
+    	background-color: var(--color-border);
+	    position: fixed;
+	    top: 0;
+	    width: 100%;
+	    z-index: 2;
+	}
+	#navWrapper{
+	    display: none;
+	}
+	#main-doc{
+		display: inline-block;
+		margin: 0;
+		width: auto;
+		position: relative;
+		min-height: 100vh;
+	}
+
+	footer{
+		display: inline;
+		position: relative;
+		bottom: 0;
+	 	height: 2.5rem;
+	}
+	#bodyWrapper{
+		display: inline;
+  }
+}

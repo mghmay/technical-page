@@ -113,7 +113,8 @@ footer{
 	#main-doc{
 		display: inline-block;
 		margin: 0;
-		width: auto;
+		width: 100%;
+    padding: 0;
 		position: relative;
 		min-height: 100vh;
 	}
